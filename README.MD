@@ -1,4 +1,5 @@
 # Startup School: Python
+![Logo](/img/file.enc)
 
 ## Objetivo
 
