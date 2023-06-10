@@ -1,0 +1,20 @@
+Nombre,Apellido,Edad,Género,Ciudad,Experiencia,Carrera,Idioma1,Idioma2,Habilidad1,Habilidad2,Correo electrónico,Nivel de educación,Campo de estudio,Número de proyectos completados,Sueldo
+Juan,López,32,Masculino,Juárez,8,Ingeniería,Español,Inglés,,,juan.lopez@example.com,Master,Ingeniería,20,8000
+María,Rodríguez,24,Femenino,Juárez,2,Marketing,Español,Inglés,,,maria.rodriguez@example.com,Grado,Marketing,8,6000
+Carlos,Gómez,30,Masculino,Juárez,6,Recursos Humanos,Español,Inglés,,,carlos.gomez@example.com,Master,Recursos Humanos,18,7000
+Laura,Fernández,26,Femenino,Juárez,4,Diseño Gráfico,Español,Inglés,,,laura.fernandez@example.com,Grado,Diseño Gráfico,14,7000
+Luis,Martínez,29,Masculino,Juárez,7,Desarrollo Web,Español,Inglés,,,luis.martinez@example.com,Master,Desarrollo Web,21,9000
+Daniel,Juanes,35,Masculino,Juárez,7,Contabilidad,Español,Alemán,,,daniel.juanes@example.com,Master,Contabilidad,19,8000
+Rebeca,Alonso,29,Femenino,Juárez,4,Recursos Humanos,Español,Inglés,,,rebeca.alonso@example.com,Licenciatura,Recursos Humanos,14,7000
+Alfredo,Navarro,33,Masculino,Juárez,6,Desarrollo Web,Español,Inglés,,,alfredo.navarro@example.com,Master,Desarrollo Web,21,9000
+Sofía,Pérez,31,Femenino,Juárez,9,Consultoría,Español,Inglés,,,sofia.perez@example.com,Licenciatura,Consultoría,22,8000
+Pedro,Hernández,27,Masculino,Juárez,3,Ventas,Español,Inglés,,,pedro.hernandez@example.com,Grado,Ventas,10,7000
+Elena,González,33,Femenino,Juárez,10,Gestión de Proyectos,Español,Inglés,,,elena.gonzalez@example.com,Master,Gestión de Proyectos,25,9000
+Miguel,Ruiz,25,Masculino,Juárez,1,Recursos Humanos,Español,Inglés,,,miguel.ruiz@example.com,Licenciatura,Recursos Humanos,5,6
+Rosa,Sánchez,28,Femenino,Juárez,4,Marketing,Español,Inglés,,,rosa.sanchez@example.com,Grado,Marketing,14,7000
+Adrián,Romero,32,Masculino,Juárez,s6,Ingeniería,Español,Alemán,,,adrian.romero@example.com,Master,Ingeniería,20,8000
+Carmen,Torres,26,Femenino,Juárez,3,Desarrollo Web,Español,Inglés,,,carmen.torres@example.com,Grado,Desarrollo Web,12,7000
+Diego,Santos,30,Masculino,Juárez,5,Consultoría,Español,Inglés,,,diego.santos@example.com,Licenciatura,Consultoría,15,8000
+Victoria,Reyes,27,Femenino,Juárez,2,Recursos Humanos,Español,Inglés,,,victoria.reyes@example.com,Grado,Recursos Humanos,10,6000
+Alberto,Flores,33,Masculino,Juárez,7,Ventas,Español,Inglés,,,alberto.flores@example.com,Master,Ventas,21,8000
+                

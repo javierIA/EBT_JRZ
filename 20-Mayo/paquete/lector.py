@@ -25,5 +25,3 @@ class Lector:
         except AttributeError:
             print("Ocurrió un error al obtener los datos. Asegúrate de que el archivo se haya leído correctamente.")
 
-reader= Lector("data/precios.xlsx")
-print(reader.leer_encabezados())
