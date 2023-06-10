@@ -4,7 +4,7 @@ class BaseDatos:
     def __init__(self, nombre):
         self.nombre = "data/"+nombre
         self.conexion = None
-    
+    # Método para conectar a la base de datos
     def conectar(self):
         try:
             self.conexion = sqlite3.connect(self.nombre)
