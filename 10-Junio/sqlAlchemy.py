@@ -1,5 +1,5 @@
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.orm import declarative_base, sessionmaker
+from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
+from sqlalchemy.orm import declarative_base, sessionmaker,relationship
 
 Base = declarative_base()
 
@@ -9,6 +9,17 @@ class Usuario(Base):
     nombre = Column(String)
     apellido = Column(String)
     edad = Column(Integer)
+    vehiculos = relationship("Vehiculo", back_populates="dueño")
+
+class Vehiculo(Base):
+    __tablename__ = 'vehiculo'
+    id = Column(Integer, primary_key=True)
+    marca = Column(String)
+    modelo = Column(String)
+    anio = Column(Integer)
+    dueño_id = Column(Integer, ForeignKey('usuario.id'))
+    dueño = relationship("Usuario", back_populates="vehiculos")
+
 
 class BaseDatos:
     def __init__(self):
@@ -49,6 +60,16 @@ class BaseDatos:
     def consultar_usuario(self, id):
         usuario = self.session.query(Usuario).get(id)
         return usuario
+    
+    def insertar_vehiculo(self, marca, modelo, anio, dueño_id):
+        vehiculo = Vehiculo(marca=marca, modelo=modelo, anio=anio, dueño_id=dueño_id)
+        self.session.add(vehiculo)
+        self.session.commit()
+        print("Vehiculo insertado correctamente.")
+    def obtener_vehiculos(self):
+        vehiculos = self.session.query(Vehiculo).all()
+        return vehiculos
+    
         
 if __name__ == "__main__":
     bd_manager = BaseDatos()
@@ -59,9 +80,10 @@ if __name__ == "__main__":
     bd_manager.insertar_usuario('Ana', 'Gutierrez', 30)
     bd_manager.insertar_usuario('Luis', 'Garcia', 40)
     bd_manager.actualizar_usuario(1, 'Juan', 'Perez', 26)
-    bd_manager.eliminar_usuario(2)
+    bd_manager.eliminar_usuario(4)
     usuarios = bd_manager.obtener_usuarios()
     for usuario in usuarios:
         print(usuario.nombre, usuario.apellido, usuario.edad)
     bd_manager.actualizar_usuario(1, 'Juan', 'Perez', 26)
+    bd_manager.insertar_vehiculo('Ford', 'Fiesta', 2019, 1)
     bd_manager.cerrar_conexion()
