@@ -44,7 +44,7 @@ class BaseDatos:
             session.commit()
 
 def main():
-    database_url = "sqlite:///database.db"
+    database_url = "sqlite:///data/10-Junio.db"
     bd = BaseDatos(database_url)
     
     bd.crear_usuario("Juan", "Perez", 25, "juan@example.com")

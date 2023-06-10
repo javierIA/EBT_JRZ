@@ -4,7 +4,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 Base = declarative_base()
 
 class Usuario(Base):
-    __tablename__ = 'usuarios'
+    __tablename__ = 'usuario'
     id = Column(Integer, primary_key=True)
     nombre = Column(String)
     apellido = Column(String)
